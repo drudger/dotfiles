@@ -1,0 +1,2 @@
+alias ho='heroku open'
+alias hl='heroku logs'

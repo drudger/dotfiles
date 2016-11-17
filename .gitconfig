@@ -1,0 +1,7 @@
+[user]
+	email = drudger@users.noreply.github.com
+	name = Chris Hinds
+[push]
+	default = simple
+[merge]
+	tool = vimdiff
