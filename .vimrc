@@ -1,7 +1,6 @@
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-source ~/.vim/ftplugins/java_getset.vim
 
 colorscheme vividchalk
 
