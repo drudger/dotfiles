@@ -1,6 +1,7 @@
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
+filetype plugin on
 
 colorscheme vividchalk
 
@@ -42,6 +43,21 @@ noremap h <nop>
 noremap j <nop>
 noremap k <nop>
 noremap l <nop>
+
+" Mimic tmux split settings
+map <tab> <c-w>w
+map <bar> <c-w>v<c-w><right>
+map - <c-w>s<c-w><down>
+
+" Easier split resizing
+map _ <c-w>-
+map + <c-w>+
+
+" Easier split navigations
+nnoremap <c-h> <c-w><c-h>
+nnoremap <c-j> <c-w><c-j>
+nnoremap <c-k> <c-w><c-k>
+nnoremap <c-l> <c-w><c-l>
 
 " Map Ctrl-s
 nmap <c-s> :w<CR>
