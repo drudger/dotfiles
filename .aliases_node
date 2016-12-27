@@ -1,0 +1,9 @@
+npm() {
+    if [[ $@ == "install" ]]; then
+        command npm install --no-bin-links
+    else
+        command npm "$@"
+    fi
+}
+
+alias node-debug='node-debug --web-port 5000 '
