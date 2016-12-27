@@ -12,6 +12,7 @@ alias la='ls -a'
 alias rm='rm -i'
 alias mv='mv -iv'
 alias cp='cp -v'
+alias sudo='sudo '
 
 alias python='python3'
 alias tree='tree -a'
@@ -25,3 +26,6 @@ source ~/.aliases_rails
 
 # heroku aliases
 source ~/.aliases_heroku
+
+# node aliases
+source ~/.aliases_node
