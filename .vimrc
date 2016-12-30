@@ -27,7 +27,7 @@ let g:syntastic_check_on_wq = 0
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Close tags settings
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.hbs"
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.hbs,*.ejs"
 
 " Leader key
 let mapleader = ","
