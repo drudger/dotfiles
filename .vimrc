@@ -5,7 +5,7 @@ filetype plugin on
 
 colorscheme vividchalk
 
-:set tabstop=4 shiftwidth=4 expandtab
+:set tabstop=2 shiftwidth=2 expandtab
 :set nowrap
 :set autoindent
 :set number
@@ -31,6 +31,14 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.hbs,*.ejs"
 
 " Leader key
 let mapleader = ","
+
+" Vim Mocha
+map <Leader>t :call RunCurrentSpecFile()<cr>
+map <Leader>s :call RunNearestSpec()<cr>
+map <Leader>l :call RunLastSpec()<cr>
+map <Leader>a :call RunAllSpecs()<cr>
+
+let g:mocha_js_command = "!mocha -u bdd -R nyan -t 500 --recursive"
 
 " Disable Arrow keys in Escape mode
 map <up> <nop>
@@ -91,3 +99,8 @@ cmap both InsertBothGetterSetter<CR>
 
 " Spring Application
 let @c = 'mc/classwviwy`cipublic static void main(String[] args) {SpringApplication.run(".class, args);'
+
+" Set directories for backup, swap, and undo
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set undodir=~/.vim/undo//
