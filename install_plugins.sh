@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # vim plugins
-mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/colors && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+mkdir -p ~/.vim/{autoload,bundle,colors} && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+mkdir -p ~/.vim/{backup,swap,undo}
 
 git clone git://github.com/jiangmiao/auto-pairs.git ~/.vim/bundle/auto-pairs
 git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
@@ -15,6 +16,3 @@ git clone https://github.com/tpope/vim-abolish.git ~/.vim/bundle/vim-abolish
 git clone https://github.com/geekjuice/vim-mocha.git ~/.vim/bundle/vim-mocha
 
 wget https://raw.githubusercontent.com/tpope/vim-vividchalk/master/colors/vividchalk.vim -O ~/.vim/colors/vividchalk.vim
-
-# tmux plugins
-git clone https://github.com/drmad/tmux-git.git ~/.tmux-git
