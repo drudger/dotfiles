@@ -15,7 +15,6 @@ alias cp='cp -v'
 alias sudo='sudo '
 alias mkdir='mkdir -p'
 
-alias python='python3'
 alias tree='tree -a'
 alias quit='sudo shutdown -h now'
 
@@ -34,3 +33,6 @@ source ~/.aliases_heroku
 
 # node aliases
 source ~/.aliases_node
+
+# python aliases
+source ~/.aliases_python

@@ -1,0 +1,7 @@
+# default to python 3
+alias python='python3'
+
+# util functions
+venv(){
+  virtualenv -p $( which python3 ) .$1;
+}
