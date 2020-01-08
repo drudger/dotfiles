@@ -25,9 +25,6 @@ mcd() { mkdir -p $1; cd $1; }
 # git aliases
 source ~/.aliases_git
 
-# rails aliases
-source ~/.aliases_rails
-
 # heroku aliases
 source ~/.aliases_heroku
 
