@@ -13,16 +13,6 @@ colorscheme vividchalk
 :set colorcolumn=80
 :set statusline=%=%f\ [col:\ %c]\ 
 
-" Syntastic Recommended Settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-
 " CtrlP Settings
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
@@ -31,14 +21,6 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.hbs,*.ejs"
 
 " Leader key
 let mapleader = ","
-
-" Vim Mocha
-map <Leader>t :call RunCurrentSpecFile()<cr>
-map <Leader>s :call RunNearestSpec()<cr>
-map <Leader>l :call RunLastSpec()<cr>
-map <Leader>a :call RunAllSpecs()<cr>
-
-let g:mocha_js_command = "!mocha -u bdd -R nyan -t 500 --recursive"
 
 " Disable Arrow keys in Escape mode
 map <up> <nop>
@@ -75,30 +57,9 @@ nnoremap <c-j> <c-w><c-j>
 nnoremap <c-k> <c-w><c-k>
 nnoremap <c-l> <c-w><c-l>
 
-" Map Ctrl-s
-nmap <c-s> :w<CR>
-imap <c-s> <Esc>:w<CR>a
-imap <c-s> <Esc><c-s>
-
 " Map kj to Esc
 imap kj <Esc>
 imap jk <ESC>
-
-" Map NTT to NERDTreeToggle
-imap NTT <Esc>:NERDTreeToggle<CR>
-cmap NTT NERDTreeToggle
-
-" Quick insert for anonymous http functions
-imap fqs function(req, res){}
-
-" Quick System.out.printf for java
-imap sout<CR> System.out.println();<Esc>hi
-
-" Java Getter/Setter Plugin Shortcuts
-cmap both InsertBothGetterSetter<CR>
-
-" Spring Application
-let @c = 'mc/classwviwy`cipublic static void main(String[] args) {SpringApplication.run(".class, args);'
 
 " Set directories for backup, swap, and undo
 set backupdir=~/.vim/backup//
