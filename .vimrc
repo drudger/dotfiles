@@ -1,7 +1,4 @@
-execute pathogen#infect()
 syntax on
-filetype plugin indent on
-filetype plugin on
 
 colorscheme vividchalk
 
@@ -12,12 +9,6 @@ colorscheme vividchalk
 :set relativenumber
 :set colorcolumn=80
 :set statusline=%=%f\ [col:\ %c]\ 
-
-" CtrlP Settings
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-
-" Close tags settings
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.hbs,*.ejs"
 
 " Leader key
 let mapleader = ","

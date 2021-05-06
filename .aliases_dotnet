@@ -1,0 +1,15 @@
+alias dnt='dotnet test'
+alias dnb='dotnet build'
+alias dnr='dotnet run'
+alias dnbr='dotnet build && dotnet run'
+
+alias dnn='dotnet new'
+
+alias dnco='dotnet new console'
+alias dncl='dotnet new classlib'
+alias dnwe='dotnet new webapp'
+alias dngi='dotnet new gitignore'
+
+alias dns='dotnet sln'
+
+alias dndc='dotnet dev-certs https --trust'
