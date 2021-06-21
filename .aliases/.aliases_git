@@ -1,4 +1,6 @@
 # git aliases
+alias sgit='source ~/.aliases_git'
+alias vgit='vim ~/.aliases_git'
 
 alias ga='git add '
 alias ga.='git add .'
@@ -15,9 +17,17 @@ alias gl='git log'
 alias gm='git merge '
 alias go='git checkout '
 alias gob='git checkout -b'
-alias gom='git checkout master'
 alias gp='git push'
-alias gphm='git push heroku master'
-alias gplm='git push local master'
-alias gpom='git push origin master'
 alias gs='git status '
+
+if git show-ref --verify --quiet refs/heads/master; then 
+  alias gom='git checkout master'
+  alias gphm='git push heroku master'
+  alias gplm='git push local master'
+  alias gpom='git push origin master'
+else
+  alias gom='git checkout main'
+  alias gphm='git push heroku main'
+  alias gplm='git push local main'
+  alias gpom='git push origin main'
+fi
