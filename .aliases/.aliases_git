@@ -1,6 +1,6 @@
 # git aliases
-alias sgit='source ~/.aliases_git'
-alias vgit='vim ~/.aliases_git'
+alias sgit='source ~/.aliases/.aliases_git'
+alias vgit='vim ~/.aliases/.aliases_git'
 
 alias ga='git add '
 alias ga.='git add .'
